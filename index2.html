@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background-image: linear-gradient(250deg,rgba(185,19,57,0.856),rgba(0,0,24,0.877));
+            min-height: 100vh;
+            min-width: 50vw;
+            /* overflow-x: hidden;
+         overflow-y: hidden;  */
+        }
+        .container{
+            width: 500px;
+            background-color: white;
+            margin: 50px auto;
+            padding: 15px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            box-shadow: 0 0 10px rgb(248, 246, 247),0 0 20px rgba(253, 0, 59, 0.959);
+       
+        }
+        h2{
+            text-align: center; 
+            padding: 15px;
+            letter-spacing: 2px;
+        }
+        .input-group{
+            margin: 10px;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        .text{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid;
+            cursor: pointer;
+        }
+        .redio{
+            margin-left: 10px;
+        }
+        button{
+            width: 100%;
+            padding: 5px;
+            background-color: brown;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            cursor:pointer;
+        }
+        .abc{
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h2>REGISTRATION FORM</h2>
+            <div class="input-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" class="text" placeholder="Enter Your First Name" required>
+            </div>
+            <div class="input-group"> <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname"  class="text" placeholder="Enter Your Last Name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  class="text" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="Password" id="Password" name="Password"  class="text" placeholder="Enter Your Password" required>
+            </div>
+            <div class="input-group">
+                <label for="CPassword">Conform Password </label>
+                <input type="password" id="CPassword" name="CPassword"  class="text" placeholder="Conform Password" required>
+            </div>
+            <div class="input-group">
+                <label for="cont"> Choose Country</label>
+                <input list="Country" id="cont" name="cont" placeholder="selecter your country" class="text" required>
+                <datalist id="Country">
+                    <option value="India"></option>
+                    <option value="Europ"></option>
+                    <option value="Russia"></option>
+                </datalist>
+            </div>
+            <div class="input-group"> <label for="phone"> Mobile Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    class="text" required>
+            </div>
+            <div class="input-group">
+                <label>Genter</label>
+                <input type="radio" id="Male" name="Genter" value="Male" class="redio" required>
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Genter" value="Female" class="redio" required>
+                <label for="Female">Female</label>
+                <input type="radio" id="other" name="Genter" value="other" class="redio" required>
+                <label for="other">Other</label>
+            </div>
+            <div class="input-group">
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" id="dob" class="text" required>
+                <input type="checkbox" name="check" id="check" value="terms" required>
+            </div>
+            <div class="input-group">
+                <label for="check">I agree the <a href="#">terms and conditions</a></label>
+            </div>
+            <div class="input-group">
+                <button>Register</button>
+            </div>
+            <div class="abc">or</div>
+            <div class="abc">Already have an account?<a href="#">Sign in here!!</a></div>
+        </form>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
+
+<p></p>
